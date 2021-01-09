@@ -1,0 +1,11 @@
+networkx[all]
+numpy
+cython
+scikit-learn
+scipy
+git+git://github.com/Jacobe2169/GMatch4py.git@master#egg=GMatch4py
+git+git://github.com/jfrelinger/cython-munkres-wrapper.git@master#egg=cython-munkres-wrapper
+
+pygraphviz
+graphsim
+grakel

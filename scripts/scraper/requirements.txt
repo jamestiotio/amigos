@@ -1,0 +1,7 @@
+scrapy
+selenium
+gspread
+
+# Optional custom authentication libraries
+google-auth
+oauthlib[signedtoken]
