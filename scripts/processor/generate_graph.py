@@ -13,7 +13,9 @@ class FinalGraphs:
     def __init__(self, design_teams, dw_teams):
         all_design_groupings = []
         all_dw_groupings = []
-        self.ged = gm.GraphEditDistance(1, 1, 1, 1)  # All edit costs are equal to 1
+        self.ged = gm.GraphEditDistance(
+            1, 1, 1, 1
+        )  # All edit costs are equal to 1 (these are modification costs, which are not weights of the graphs' edges to be very precise)
 
         for class_number, values in design_teams.items():
             for team_number, team_members in values.items():
