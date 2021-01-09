@@ -41,7 +41,7 @@ For data access, follow these steps:
 
 1. Theoretically, `gmatch4py` converts the Graph Edit Distance problem into an Assignment problem and then solves the Assignment problem using the Kuhn-Munkres algorithm (also known as the Hungarian matching method), which is fundamentally different from the A\* search algorithm originally implemented by `networkx`. This would result in a different outcome in terms of the aforementioned similarity measure. For our use case, `gmatch4py` would produce a much quicker output compared to `networkx`, and thus, we decided to utilize `gmatch4py`.
 2. A subtle difference worthy of note between `gmatch4py` and `networkx` is how they calculate substitutions (2 unit costs for `gmatch4py`, 1 unit cost for `networkx`).
-3. Another difference is that `gmatch4py` accounts for the different labels of the vertices by default (which is what we actually desire), whereas `networkx` only considers the "structural connections" of the graphs (although `networkx`'s behaviour for this aspect could be customized manually).
+3. Another difference is that `gmatch4py` accounts for the different labels of the vertices by default (which is what we actually desire), whereas `networkx` only considers the "structural connections" of the graphs (although `networkx`'s behaviour for this aspect could be customized manually so as to also accommodate for differences in certain specified attributes).
 
 ## Plotting
 
