@@ -65,7 +65,7 @@ Comparison analysis graph (both are censored representations of each final graph
 
 |                Course                 |                          03.007 Introduction to Design                           |                         10.009 The Digital World                         |
 | :-----------------------------------: | :------------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-|            Groupings Graph            | ![Design Graph Plot](/home/jamestiotio/Documents/amigos/assets/design_graph.png) | ![DW Graph Plot](/home/jamestiotio/Documents/amigos/assets/dw_graph.png) |
+|            Groupings Graph            | ![Design Graph Plot](assets/design_graph.png) | ![DW Graph Plot](assets/dw_graph.png) |
 | (Control Variable) GED vs. Null Graph |                                        ∞                                         |                                    ∞                                     |
 |          GED vs. Empty Graph          |                                       1700                                       |                                   1718                                   |
 |       GED vs. Complement Graph        |                                       800                                        |                                   822                                    |
