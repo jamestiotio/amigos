@@ -10,6 +10,8 @@ import scraper.dw
 import processor.generate_graph
 import processor.plot_graph
 import utils.plot_histogram
+import utils.verify_data
+import sys
 
 
 class MainProgramHandler:
@@ -21,6 +23,17 @@ class MainProgramHandler:
         # Get the corresponding teams (student ID groupings list)
         self.design_teams = design.teams
         self.dw_teams = dw.teams
+
+        # Verify that the data is valid
+        self.design_verifier = utils.verify_data.DataVerifier(self.design_teams)
+        self.dw_verifier = utils.verify_data.DataVerifier(self.dw_teams)
+        try:
+            assert self.design_verifier.status and self.dw_verifier.status
+        except AssertionError:
+            print(
+                "It seems that the data is invalid! Please check the data manually and ensure that the data is of the correct format and fulfill the specified requirements."
+            )
+            sys.exit()
 
     # Run graph-based algorithm to produce the required graphs
     def generate_graphs(self):
