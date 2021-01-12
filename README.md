@@ -86,6 +86,8 @@ Compiled results:
 
 The overall averaged teammate retention rate for SUTD's Class of 2022 from 03.007 to 10.009 is (23.9% + 50.3%) / 2 = **37.1%**.
 
+A possible reason for the relatively quite significant retention rate might be that undergraduates feel more comfortable and safer with familiar faces and individuals, although they are still open to some teammate composition changes due to various other reasons. The retention rate might also be averaged out over some groups with very similar compositions and some groups that have entirely different compositions.
+
 ## Limitations
 
 1. A very obvious limitation would be that it is unfair to compare these two courses since they are of a different nature. The different group composition between the two courses might be due to the different members trying to rearrange themselves to leverage each other's strengths in vastly different fields of expertise in a different way. The complex nature of group dynamics, as well as the ever-changing personalities of each person and the barrage of constantly new insights of how each team member's work ethic operates in this world of imperfect information are definitely not captured in this very naive comparison. The very nature of the act of team formation being limited to only members within each class also hinders a more dynamic and diverse approach to the very essence of group formation, although that might boost the teammate retention rate by a little bit. This study simply reorganizes the information that are already factually present, instead of creating new inferences or implications.
