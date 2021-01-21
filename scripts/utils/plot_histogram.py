@@ -2,9 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import seaborn as sns
+from typing import Dict, List
 
 
-def plot_groups(teams, course_option="", outfile="output.png"):
+def plot_groups(
+    teams: Dict[str, Dict[str, List[int]]],
+    course_option: str = "",
+    outfile: str = "output.png",
+):
     sns.set_theme(style="darkgrid")
     x = [
         len(j)

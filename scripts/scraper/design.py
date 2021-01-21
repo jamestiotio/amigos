@@ -11,6 +11,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+from typing import Dict, List
 
 
 class DesignGroupStudentIDCrawler(scrapy.Spider):
@@ -139,7 +140,7 @@ class DesignTeams:
         driver.quit()
 
     # Process the output response object to return the whole accordion div separated into two parts: the h3 heading tag for the group numbers and the actual tabular content (roster tables stripped from their own container sections) of the student IDs
-    def process(self, output):
+    def process(self, output) -> Dict[str, Dict[str, List[int]]]:
         result = {}
 
         # Strip some unnecessary whitespaces, newlines and tabs from the headers, as well as ignore the irrelevant headers ("All Students", "Others", "Teaching Assistants" and "Instructors")

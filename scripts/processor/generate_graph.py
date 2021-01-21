@@ -3,6 +3,8 @@
 
 import networkx as nx
 import gmatch4py as gm
+import numpy as np
+from typing import Dict, List
 
 
 class FinalGraphs:
@@ -10,7 +12,11 @@ class FinalGraphs:
     Class of helper functions to build the final overall 2 graphs
     """
 
-    def __init__(self, design_teams, dw_teams):
+    def __init__(
+        self,
+        design_teams: Dict[str, Dict[str, List[int]]],
+        dw_teams: Dict[str, Dict[str, List[int]]],
+    ):
         all_design_groupings = []
         all_dw_groupings = []
         self.ged = gm.GraphEditDistance(
@@ -48,7 +54,7 @@ class FinalGraphs:
             self.dw_graph
         )
 
-    def get_similarity_rate_compared_to_complement_graphs(self):
+    def get_similarity_rate_compared_to_complement_graphs(self) -> np.float64:
         design_complement_result = self.ged.compare(
             [self.design_graph, self.complement_design_graph], None
         )
@@ -70,7 +76,7 @@ class FinalGraphs:
         self.empty_design_graph = nx.create_empty_copy(self.design_graph)
         self.empty_dw_graph = nx.create_empty_copy(self.dw_graph)
 
-    def get_similarity_rate_compared_to_empty_graphs(self):
+    def get_similarity_rate_compared_to_empty_graphs(self) -> np.float64:
         design_empty_result = self.ged.compare(
             [self.design_graph, self.empty_design_graph], None
         )
@@ -90,7 +96,7 @@ class FinalGraphs:
         self.null_graph = nx.empty_graph(0)
 
     # Use this as control variable (should return 0.0 since values are divided by infinity)
-    def get_similarity_rate_compared_to_null_graph(self):
+    def get_similarity_rate_compared_to_null_graph(self) -> np.float64:
         design_null_result = self.ged.compare(
             [self.design_graph, self.null_graph], None
         )

@@ -4,6 +4,7 @@
 import constants
 import gspread
 import re
+from typing import Dict, List
 
 
 class DWTeams:
@@ -21,7 +22,9 @@ class DWTeams:
         self.cohort_classes = self.sh.worksheets()[0:8]
         self.get_all_dw_groups()
 
-    def get_single_class_dw_groups(self, cohort_class_code):
+    def get_single_class_dw_groups(
+        self, cohort_class_code: str
+    ) -> Dict[str, List[int]]:
         class_index = constants.COHORT_CLASSES.get(cohort_class_code)
         worksheet = self.cohort_classes[class_index]
         values = worksheet.get_all_values()

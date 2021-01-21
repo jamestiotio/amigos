@@ -5,10 +5,15 @@ from networkx.drawing.nx_agraph import graphviz_layout, to_agraph
 import networkx as nx
 import pygraphviz as pgv
 import matplotlib.pyplot as plt
+from typing import Dict, List
 
 
 class PlottingMethods:
-    def __init__(self, design_teams, dw_teams):
+    def __init__(
+        self,
+        design_teams: Dict[str, Dict[str, List[int]]],
+        dw_teams: Dict[str, Dict[str, List[int]]],
+    ):
         all_design_groupings = []
         all_dw_groupings = []
 
