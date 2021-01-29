@@ -5,6 +5,8 @@
 
 EDIMENSION_GENERAL_URL = "edimension.sutd.edu.sg"
 EDIMENSION_LOGIN_URL = "saturn.sutd.edu.sg"
+
+# This constant is used by an extremely hacky method to detect a 503 error when loading the page (this is due to the fact that it is not possible to use the Selenium WebDriver API to get the HTTP Response Code, as per discussed ad nauseam here: https://github.com/seleniumhq/selenium-google-code-issue-archive/issues/141)
 EDIMENSION_ERROR_PAGE_SOURCE = '<html><head><title>Service Unavailable</title>\n<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"></head>\n<body><h2>Service Unavailable</h2>\n<hr><p>HTTP Error 503. The service is unavailable.</p>\n\n</body></html>'
 
 EDIMENSION_USERNAME = ""  # SUTDSTU\\100xxxx
