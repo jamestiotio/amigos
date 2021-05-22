@@ -1,6 +1,6 @@
 networkx[all]
 numpy
-cython
+Cython
 scikit-learn
 scipy
 git+git://github.com/Jacobe2169/GMatch4py.git@master#egg=GMatch4py

@@ -79,12 +79,12 @@ Compiled results:
 |             Benchmark             | 03.007 | 10.009 | Average Similarity Rate |
 | :-------------------------------: | :----: | :----: | :---------------------: |
 |   (Control Variable) Null Graph   |  0.0%  |  0.0%  |          0.0%           |
-|            Empty Graph            | 24.1%  | 23.7%  |          23.9%          |
-| Complement Graph (Most Accurate?) | 51.1%  | 49.5%  |        **50.3%**        |
+|            Empty Graph            | 75.9%  | 76.3%  |          76.1%          |
+| Complement Graph (Most Accurate?) | 48.9%  | 50.5%  |        **49.7%**        |
 
 ## Conclusion
 
-The overall averaged teammate retention rate for SUTD's Class of 2022 from 03.007 to 10.009 is (23.9% + 50.3%) / 2 = **37.1%**.
+The overall averaged teammate retention rate for SUTD's Class of 2022 from 03.007 to 10.009 is (76.1% + 49.7%) / 2 = **62.9%**.
 
 A possible reason for the relatively quite significant retention rate might be that undergraduates feel more comfortable and safer with familiar faces and individuals, although they are still open to some teammate composition changes due to various other reasons. The retention rate might also be averaged out over some groups with very similar compositions and some groups that have entirely different compositions.
 

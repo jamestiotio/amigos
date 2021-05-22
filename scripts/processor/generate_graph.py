@@ -63,10 +63,10 @@ class FinalGraphs:
         )
 
         design_side_similarity_percentage = (
-            self.design_dw_result[1, 0] / design_complement_result[1, 0]
+            1 - self.design_dw_result[1, 0] / design_complement_result[1, 0]
         )
         dw_side_similarity_percentage = (
-            self.design_dw_result[0, 1] / dw_complement_result[1, 0]
+            1 - self.design_dw_result[0, 1] / dw_complement_result[1, 0]
         )
 
         # Use and return the average as a very, very, very rough method (since the 03.007 graph contains slightly different vertices in overall compared to the 10.009 graph)
@@ -83,10 +83,10 @@ class FinalGraphs:
         dw_empty_result = self.ged.compare([self.dw_graph, self.empty_dw_graph], None)
 
         design_side_similarity_percentage = (
-            self.design_dw_result[1, 0] / design_empty_result[1, 0]
+            1 - self.design_dw_result[1, 0] / design_empty_result[1, 0]
         )
         dw_side_similarity_percentage = (
-            self.design_dw_result[0, 1] / dw_empty_result[1, 0]
+            1 - self.design_dw_result[0, 1] / dw_empty_result[1, 0]
         )
 
         # Use and return the average as a very, very, very rough method (since the 03.007 graph contains slightly different vertices in overall compared to the 10.009 graph)
@@ -103,10 +103,10 @@ class FinalGraphs:
         dw_null_result = self.ged.compare([self.dw_graph, self.null_graph], None)
 
         design_side_similarity_percentage = (
-            self.design_dw_result[1, 0] / design_null_result[1, 0]
+            1 - self.design_dw_result[1, 0] / design_null_result[1, 0]
         )
         dw_side_similarity_percentage = (
-            self.design_dw_result[0, 1] / dw_null_result[1, 0]
+            1 - self.design_dw_result[0, 1] / dw_null_result[1, 0]
         )
 
         # Use and return the average as a very, very, very rough method (since the 03.007 graph contains slightly different vertices in overall compared to the 10.009 graph)
