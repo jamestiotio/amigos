@@ -22,7 +22,7 @@ Also, a major factor to choosing these courses would be that the data of groups 
 
 ## Repository Details & Usage
 
-> To install the dependencies properly, this command might need to be run first beforehand: `sudo apt install python3-testresources`
+> To install the dependencies properly, this command might need to be run first beforehand: `sudo apt install python3-testresources`.
 
 No actual data is included in this repository so as to comply with the current PDPA guidelines and legislations adopted by SUTD in Singapore (although the results recorded below are drawn from the actual data).
 
