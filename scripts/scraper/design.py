@@ -103,7 +103,7 @@ class DesignTeams:
 
         # Click the `Agree & Continue` button to enable cookies for Blackboard, if it is present
         if agree_button_exists:
-            driver.find_element_by_xpath('//*[@id="agree_button"]').click()
+            driver.find_element_by_id("agree_button").click()
 
         # Click the `SUTD Network ID` login option button
         driver.find_element_by_xpath('//*[@id="loginOptionsMobile"]/div[2]').click()
@@ -113,15 +113,15 @@ class DesignTeams:
             driver.refresh()
 
         # Enter the provided eDimension's username and password into the corresponding input textboxes
-        driver.find_element_by_xpath('//*[@id="userNameInput"]').send_keys(
+        driver.find_element_by_id("userNameInput").send_keys(
             constants.EDIMENSION_USERNAME
         )
-        driver.find_element_by_xpath('//*[@id="passwordInput"]').send_keys(
+        driver.find_element_by_id("passwordInput").send_keys(
             constants.EDIMENSION_PASSWORD
         )
 
         # Click the `Sign in` button
-        driver.find_element_by_xpath('//*[@id="submitButton"]').click()
+        driver.find_element_by_id("submitButton").click()
 
         # This rarely happens, but it could potentially happen
         if driver.page_source == constants.EDIMENSION_ERROR_PAGE_SOURCE:

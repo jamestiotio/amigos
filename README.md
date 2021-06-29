@@ -22,6 +22,8 @@ Also, a major factor to choosing these courses would be that the data of groups 
 
 ## Repository Details & Usage
 
+> To install the dependencies properly, this command might need to be run first beforehand: `sudo apt install python3-testresources`
+
 No actual data is included in this repository so as to comply with the current PDPA guidelines and legislations adopted by SUTD in Singapore (although the results recorded below are drawn from the actual data).
 
 Each person is considered to be a node/vertex in the 2 group composition graphs, each representing each module. If two persons are in the same group for either subject, they would then be connected by an undirected edge (resulting in two adjacent vertices being incident to an undirected edge). This would result in 2 simple (non-multigraph), undirected and unweighted graphs being formed, one for each module (and they are definitely cyclic since complete subgraphs contain loops/cycles). Then, analysis was done using methods involving the Graph Edit Distance between the two graphs formed. Using `networkx` and `gmatch4py`, we calculated the (bidirectional) Graph Edit Distance as a measure of similarity between the two graphs. This measure would then be converted/normalized into a percentage form to give a more intuitive and concrete measure on how similar the two graphs are, thereby resulting in the desired teammate retention rate figure. To get the teammate retention rate, we relatively compare against two types of graph candidates: the respective empty graphs and the corresponding complement graphs. This is to give a more rounded and nuanced approach to the final estimate. Finally, as a control variable, we check the "similarity rate" against the null graph (empty graph with zero nodes) as well.
