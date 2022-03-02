@@ -10,6 +10,8 @@ This short study utilizes graph theory to compare group member composition betwe
 
 A final measure in the form of teammate retention rate is then calculated.
 
+The results of this study were used as part of a sociology/social networks research in SUTD on the topic of "Exploring Homophily in Freshmen". Corresponding video can be viewed [here](https://youtu.be/h_lXEnitUAg). The [poster](./Poster_CH02_Grp1.pdf) and [transcript](./Transcript_CH02_Grp1.pdf) can also be found in this repository.
+
 ## Why 03.007 & 10.009?
 
 The numbers? I don't know, I didn't came up with the course codes.
